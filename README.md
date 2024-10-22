@@ -54,4 +54,6 @@ Pretrained model weights are also available [on Hugging Face](https://huggingfac
 
 
 ## yt download
-yt-dlp -x --audio-format wav --postprocessor-args "-ac 1 -ar 24000" "youtube-url"
+yt-dlp -x --audio-format wav --postprocessor-args "-ac 1 -ar 24000" "youtube-url" 
+
+then `ffmpeg -ss 00:00:30 -i input.wav -t 00:00:10 -ac 1 -ar 24000 output.wav` to trim 10 seconds starting from 00:00:30
